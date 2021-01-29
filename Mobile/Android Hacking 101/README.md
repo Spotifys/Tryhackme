@@ -54,6 +54,8 @@ Answer:
 
 - What is the apk path of Black Hat Europe?
 
+[![Find With ADB](https://i.ibb.co/t25V1r7/3.jpg "Find With ADB")](https://github.com/Spotifys/Tryhackme/blob/main/Mobile/Android%20Hacking%20101/README.md "Find With ADB")
+
 Answer:
 
 ```/data/app/com.swapcard.apps.android.blackhat-1/base.apk```
