@@ -36,3 +36,18 @@ Answer:
  ```
 com.swapcard.apps.android.blackhat
 ```
+------------
+##### Task5
+###### Reversing
+
+
+- Tool for convert dex file to smali code?
+
+```
+d2j-dex2smali
+```
+
+- Which is the option for build apps with apktool?
+```
+b
+```
