@@ -54,3 +54,14 @@ Answer:
 ```
 b
 ```
+- What is the apk path of Black Hat Europe?
+
+Answer:
+
+```/data/app/com.swapcard.apps.android.blackhat-1/base.apk```
+
+- Command for extract apk of Back Hat Europe?
+
+Answer:
+
+```adb pull /data/app/com.swapcard.apps.android.blackhat-1/base.apk```
