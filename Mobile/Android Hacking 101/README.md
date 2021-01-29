@@ -72,8 +72,9 @@ Answer:
 
 
 - What is the name of the firebase instance in the app Black Hat Europe?
-*Find With Mobsf
-*
+
+*Find With Mobsf*
+
 [![Find in Mobsf Report](https://i.ibb.co/0VHWy1L/4.jpg "Find in Mobsf Report")](https://github.com/Spotifys/Tryhackme/blob/main/Mobile/Android%20Hacking%20101/README.md "Find in Mobsf Report")
 
 Answer:
