@@ -124,6 +124,9 @@ No Answer Needed!
 No Answer Needed!
 
 You want to know more?
+
 https://owasp.org/www-project-mobile-top-10/
+
 https://owasp.org/www-project-mobile-security-testing-guide/
+
 https://twitter.com/mobilesecurity
