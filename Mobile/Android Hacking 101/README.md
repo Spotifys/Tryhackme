@@ -13,3 +13,8 @@ No Answer Needed!
 ##### Task2
 ###### Setup the environment
 No Answer Needed!
+
+------------
+##### Task3
+###### Methodology
+No Answer Needed!
