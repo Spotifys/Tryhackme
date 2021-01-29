@@ -18,3 +18,21 @@ No Answer Needed!
 ##### Task3
 ###### Methodology
 No Answer Needed!
+
+------------
+##### Task4
+###### Information Gathering
+
+
+- What is the package name of the Black Hat Europe?
+
+ [![Find With Adb](https://i.ibb.co/7S9QZc7/1.jpg "Find With Adb")](https://github.com/Spotifys/Tryhackme/blob/main/Mobile/Android%20Hacking%20101/README.md "Find With Adb")
+
+OR
+
+[![Find With Google Play Store](https://i.ibb.co/SQV5Sjx/2.jpg "Find With Google Play Store")](https://github.com/Spotifys/Tryhackme/blob/main/Mobile/Android%20Hacking%20101/README.md "Find With Google Play Store")
+
+Answer:
+ ```
+com.swapcard.apps.android.blackhat
+```
