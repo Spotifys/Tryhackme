@@ -43,12 +43,14 @@ com.swapcard.apps.android.blackhat
 
 - Tool for convert dex file to smali code?
 Answer:
+
 ```
 d2j-dex2smali
 ```
 
 - Which is the option for build apps with apktool?
 Answer:
+
 ```
 b
 ```
