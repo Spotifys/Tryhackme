@@ -93,3 +93,37 @@ Answer:
 Answer:
 
 ```android.permission.SEND_SMS```
+
+------------
+
+##### Task7
+###### Static analysis – Complications
+No Answer Needed!
+
+------------
+##### Task8
+###### Dynamic Analysis
+No Answer Needed!
+
+
+------------
+##### Task9
+###### Dynamic Analysis – Complications
+No Answer Needed!
+
+
+------------
+##### Task10
+###### Bypass - Complications in Dynamic Analysis
+No Answer Needed!
+
+
+------------
+##### Task11
+###### Final
+No Answer Needed!
+
+You want to know more?
+https://owasp.org/www-project-mobile-top-10/
+https://owasp.org/www-project-mobile-security-testing-guide/
+https://twitter.com/mobilesecurity
