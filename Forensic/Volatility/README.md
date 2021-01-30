@@ -99,3 +99,32 @@ Answer:
 - Now that we've seen all of the DLLs running in memory, let's go a step further and pull them out! Do this now with the command `volatility -f MEMORY_FILE.raw --profile=PROFILE --pid=PID dlldump -D <Destination Directory>` where the PID is the process ID of the infected process we identified earlier (questions five and six). How many DLLs does this end up pulling?
 
 ```12```
+
+------------
+#### Task 4
+###### Post Actions
+Now that we've performed some basic forensics, let's go a step further and see what the community at large has to say about the items we've discovered. Check out the following two sites and upload the injected code we yanked out of our previous section. You can pull this code either via SCP with the box above, your local volatility workstation, or via a download link attached to this task.
+
+[VirusTotal ](http://https://www.virustotal.com/gui/home/upload "VirusTotal ")
+
+[Hybrid Analysis](https://www.hybrid-analysis.com/ "Hybrid Analysis")
+![](https://i.imgur.com/q97tZIn.png)
+
+- Upload the extracted files to VirusTotal for examination.
+
+Answer:
+
+```No Answer Needed!```
+
+- Upload the extracted files to Hybrid Analysis for examination - Note, this will also upload to VirusTotal but for the sake of demonstration we have done this separately.
+
+Answer:
+
+```No Answer Needed!```
+
+- What malware has our sample been infected with? You can find this in the results of VirusTotal and Hybrid Anaylsis.
+
+Answer:
+
+```Cridex```
+
