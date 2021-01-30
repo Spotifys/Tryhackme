@@ -111,6 +111,7 @@ Answer:
 
 - Last but certainly not least we can view all of the DLLs loaded into memory. DLLs are shared system libraries utilized in system processes. These are commonly subjected to hijacking and other side-loading attacks, making them a key target for forensics. Let's list all of the DLLs in memory now with the command `dlllist`
 
+Answer:
 
 ```No Answer Needed!```
 
