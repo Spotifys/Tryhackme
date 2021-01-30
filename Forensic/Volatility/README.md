@@ -128,3 +128,19 @@ Answer:
 
 ```Cridex```
 
+
+------------
+#### Task 5
+###### Extra Credit
+Interested in going further? Here's a slew of awesome resources (both paid and free in no particular order) to check out and learn more!
+
+[AlienVault Open Threat Exchange (OTX)](https://otx.alienvault.com/dashboard/new "AlienVault Open Threat Exchange (OTX)")
+
+[windows-forensic-analysis](https://www.sans.org/cyber-security-courses/windows-forensic-analysis/ "windows-forensic-analysis")
+
+[FOR526: Advanced Memory Forensics & Threat Detection](https://www.sans.org/brochure/course/advanced-memory-forensics-and-threat-detection/2690 "FOR526: Advanced Memory Forensics & Threat Detection")
+
+Answer:
+
+```No Answer Needed!```
+
