@@ -140,6 +140,8 @@ Interested in going further? Here's a slew of awesome resources (both paid and f
 
 [FOR526: Advanced Memory Forensics & Threat Detection](https://www.sans.org/brochure/course/advanced-memory-forensics-and-threat-detection/2690 "FOR526: Advanced Memory Forensics & Threat Detection")
 
+https://www.youtube.com/watch?reload=9&v=dB5852eAgpc&feature=youtu.be
+
 Answer:
 
 ```No Answer Needed!```
