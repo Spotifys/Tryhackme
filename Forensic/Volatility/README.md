@@ -43,12 +43,17 @@ Now that we've collected our memory image let's dig into it! For those using the
 - First, let's figure out what profile we need to use. Profiles determine how Volatility treats our memory image since every version of Windows is a little bit different. Let's see our options now with the command
 ```volatility -f MEMORY_FILE.raw imageinfo```
 
+![ImageInfo](https://i.ibb.co/PtVdF1n/1.jpg "ImageInfo")
+
 Answer:
 
 ```No Answer Needed!```
 
 - Running the imageinfo command in Volatility will provide us with a number of profiles we can test with, however, only one will be correct. We can test these profiles using the pslist command, validating our profile selection by the sheer number of returned results. Do this now with the command 
 `volatility -f MEMORY_FILE.raw --profile=PROFILE pslist`
+
+![Plist](https://i.ibb.co/QYSbNjK/2.jpg "Plist")
+
 What profile is correct for this memory image?
 
 Answer:
@@ -57,11 +62,15 @@ Answer:
 
 - Take a look through the processes within our image. What is the process ID for the smss.exe process? If results are scrolling off-screen, try piping your output into less
 
+![368](https://i.ibb.co/09SdCD7/3.jpg "368")
+
 Answer:
 
 ```368```
 
 - In addition to viewing active processes, we can also view active network connections at the time of image creation! Let's do this now with the command `volatility -f MEMORY_FILE.raw --profile=PROFILE netscan`. Unfortunately, something not great is going to happen here due to the sheer age of the target operating system as the command netscan doesn't support it.
+
+![netscan](https://i.ibb.co/df9PtG5/4.jpg "netscan")
 
 Answer:
 
@@ -69,11 +78,15 @@ Answer:
 
 - It's fairly common for malware to attempt to hide itself and the process associated with it. That being said, we can view intentionally hidden processes via the command `psxview`. What process has only one 'False' listed?
 
+![PsXview](https://i.ibb.co/ypJvxFr/5.jpg "PsXview")
+
 Answer:
 
 ```csrss.exe```
 
 - In addition to viewing hidden processes via psxview, we can also check this with a greater focus via the command 'ldrmodules'. Three columns will appear here in the middle, InLoad, InInit, InMem. If any of these are false, that module has likely been injected which is a really bad thing. On a normal system the grep statement above should return no output. Which process has all three columns listed as 'False' (other than System)?
+
+![lsrmodules](https://i.ibb.co/9pz9J0g/6.jpg "lsrmodules")
 
 Answer:
 
@@ -88,15 +101,26 @@ Answer:
 
 - Injected code can be a huge issue and is highly indicative of very very bad things. We can check for this with the command `malfind`. Using the full command `volatility -f MEMORY_FILE.raw --profile=PROFILE malfind -D <Destination Directory>` we can not only find this code, but also dump it to our specified directory. Let's do this now! We'll use this dump later for more analysis. How many files does this generate?
 
+![malfind](https://i.ibb.co/vYMWgFM/7.jpg "malfind")
+![dlllist](https://i.ibb.co/CMhSFCD/8.jpg "dlllist")
+![](https://i.ibb.co/2cQFyJY/9.jpg)
+
 Answer:
 
 ```12```
 
 - Last but certainly not least we can view all of the DLLs loaded into memory. DLLs are shared system libraries utilized in system processes. These are commonly subjected to hijacking and other side-loading attacks, making them a key target for forensics. Let's list all of the DLLs in memory now with the command `dlllist`
 
+
 ```No Answer Needed!```
 
 - Now that we've seen all of the DLLs running in memory, let's go a step further and pull them out! Do this now with the command `volatility -f MEMORY_FILE.raw --profile=PROFILE --pid=PID dlldump -D <Destination Directory>` where the PID is the process ID of the infected process we identified earlier (questions five and six). How many DLLs does this end up pulling?
+
+![](https://i.ibb.co/2cQFyJY/9.jpg)
+
+![](https://i.ibb.co/qxrfnpx/10.jpg)
+
+Answer:
 
 ```12```
 
@@ -112,17 +136,23 @@ Now that we've performed some basic forensics, let's go a step further and see w
 
 - Upload the extracted files to VirusTotal for examination.
 
+![](https://i.ibb.co/JHXcR0w/11.jpg)
+
 Answer:
 
 ```No Answer Needed!```
 
 - Upload the extracted files to Hybrid Analysis for examination - Note, this will also upload to VirusTotal but for the sake of demonstration we have done this separately.
 
+![](https://i.ibb.co/JHXcR0w/11.jpg)
+
 Answer:
 
 ```No Answer Needed!```
 
 - What malware has our sample been infected with? You can find this in the results of VirusTotal and Hybrid Anaylsis.
+
+![](https://i.ibb.co/PrxSTvd/12.jpg)
 
 Answer:
 
